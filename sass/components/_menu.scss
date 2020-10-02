@@ -49,18 +49,43 @@
     width: 100%;
   }
 
-  &.is-open {
-    display: block;
-  }
-
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    padding: 0;
     flex-grow: 1;
+    height: 80px;
+    border: none;
+    box-shadow: none;
+  }
+
+  &.is-open {
+    display: inline-block;
+    text-align: center;
+    z-index: 3;
   }
 }
 
-.contacts-upper {
-  padding-top: 60px;
+.page-header__nav {
+  color: $primary-text-color;
+  font-weight: 500;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+  font-size: 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.page-header__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+  }
 }
