@@ -4,8 +4,10 @@
   padding-bottom: 25px;
 }
 
-.link.logo {
-  margin-right: 90px;
+@media screen and (min-width: 1180px) {
+  .link.logo {
+    margin-right: 90px;
+  }
 }
 
 .logotype {
