@@ -19,6 +19,8 @@
 
   @include for-size(tablet) {
     width: 768px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @include for-size(desktop) {

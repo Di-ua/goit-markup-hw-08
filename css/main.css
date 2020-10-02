@@ -523,6 +523,8 @@ a {
 @media (min-width: 768px) {
   .container.main-container {
     width: 768px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -804,7 +806,12 @@ a {
   min-height: 60px; */
   position: relative;
   background-color: #ffffff;
-  border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 767px) {
+  .page__header {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .nav-item:not(:last-child) {
@@ -879,7 +886,10 @@ a {
 }
 
 .navigation {
+  display: flex;
+  width: 100%;
   align-items: center;
+  justify-content: space-between;
   margin-right: auto;
 }
 
