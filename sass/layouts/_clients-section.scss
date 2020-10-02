@@ -3,6 +3,15 @@
   padding-bottom: 94px;
 }
 
+.clients.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
 .clients_link {
   display: flex;
   justify-content: center;
@@ -68,10 +77,20 @@
 }
 
 .clients-item {
-  width: 170px;
+  margin: 15px;
+  width: calc((100% - 2 * 30px) / 2);
   height: 90px;
 
-  &:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 30px) / 6);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item:not(:last-child) {
     margin-right: 30px;
   }
 }
