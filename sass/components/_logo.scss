@@ -1,0 +1,25 @@
+.link .logotype {
+  color: $primary-text-color;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.link.logo {
+  margin-right: 90px;
+}
+
+.logotype {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $primary-text-color;
+}
+
+.logo {
+  color: $accent-text-color;
+}
+
+.footer .logotype {
+  color: $hero-text-color;
+}

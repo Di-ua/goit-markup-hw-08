@@ -1,0 +1,67 @@
+.footer {
+  background-color: $hero-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  & > .icon {
+    fill: $hero-text-color;
+  }
+}
+
+.mailing.block {
+  margin-left: 94px;
+}
+
+.container.flexbox {
+  align-items: baseline;
+}
+
+.footer-icons-block {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.follow {
+  display: block;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $hero-text-color;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form-field.footer-form-field {
+  margin-bottom: 0;
+}
+
+.mailing-form {
+  position: relative;
+  display: flex;
+}
+
+.mail-input {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: $hero-text-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-bg-color);
+}
+
+.icon-telegram {
+  fill: $hero-text-color;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

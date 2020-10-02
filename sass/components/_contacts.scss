@@ -1,0 +1,45 @@
+// Header contacts
+.contacts a {
+  color: $secondary-text-color;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.contacts-item:active {
+  color: red;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts.link {
+  display: flex;
+  align-items: center;
+}
+
+// Footer contacts
+
+.address {
+  color: $hero-text-color;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.contacts-block {
+  display: inline-block;
+}
+
+.connect a {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.tel-number {
+  margin-top: 9px;
+}
