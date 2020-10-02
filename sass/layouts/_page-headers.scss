@@ -32,6 +32,8 @@
 .site-nav .link.current {
   color: $accent-text-color;
   position: relative;
+  display: inline;
+  text-align: center;
 }
 
 .link.current::after {

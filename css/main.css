@@ -809,6 +809,8 @@ a {
 .site-nav .link.current {
   color: #2196f3;
   position: relative;
+  display: inline;
+  text-align: center;
 }
 
 .link.current::after {
