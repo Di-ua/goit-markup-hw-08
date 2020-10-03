@@ -23,41 +23,73 @@
   <body class="page">
     <!--Шапка сайта-->
     <header class="page__header">
-      <div class="container flexbox">
+      <div class="container main-container">
         <nav class="navigation">
           <a href="./index.html" class="link logo"
             ><span class="logotype"
               ><span class="logo">Web</span>Studio</span
             ></a
           >
-          <ul class="site-nav list">
-            <li class="nav-item">
-              <a class="link" href="./index.html">Студия</a>
-            </li>
-            <li class="nav-item">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav-item"><a class="link" href="">Контакты</a></li>
-          </ul>
+          <button
+            type="button"
+            class="menu__button"
+            aria-expanded="false"
+            aria-controls="page-header__menu"
+            data-menu-button
+          >
+            <svg
+              class="menu__button--icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-menu_nav"
+                href="./images/symbol-defs.svg#icon-menu_nav"
+              ></use>
+              <use
+                class="icon-close_nav"
+                href="./images/symbol-defs.svg#icon-close_nav"
+              ></use>
+            </svg>
+          </button>
+          <div class="page-header__menu" id="page-header__menu" data-menu>
+            <div class="page-header__nav">
+              <ul class="site-nav list">
+                <li class="nav-item">
+                  <a class="link" href="./index.html">Студия</a>
+                </li>
+                <li class="nav-item">
+                  <a class="link current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-item"><a class="link" href="">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="page-header__contacts">
+              <ul class="contacts list">
+                <li class="contacts-item">
+                  <a class="contacts link" href="mailto:info@devstudio.com">
+                    <svg class="mail svg">
+                      <use
+                        href="./images/symbol-defs.svg#icon-letter"
+                      ></use></svg
+                    >info@devstudio.com
+                  </a>
+                </li>
+
+                <li class="contacts-item">
+                  <a class="contacts link" href="tel:+380961111111"
+                    ><svg class="phone svg">
+                      <use
+                        href="./images/symbol-defs.svg#icon-phone"
+                      ></use></svg
+                    >+380961111111</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-
-        <ul class="contacts list">
-          <li class="contacts-item">
-            <a class="contacts link" href="mailto:info@devstudio.com">
-              <svg class="mail svg">
-                <use href="./images/symbol-defs.svg#icon-letter"></use></svg
-              >info@devstudio.com
-            </a>
-          </li>
-
-          <li class="contacts-item">
-            <a class="contacts link" href="tel:+380961111111"
-              ><svg class="phone svg">
-                <use href="./images/symbol-defs.svg#icon-phone"></use></svg
-              >+380961111111
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -88,12 +120,45 @@
             <li class="examples__card">
               <a class="example link" href="#"
                 ><div class="portfolio__image-thumb">
-                  <img
-                    src="./images/portf1.jpg"
-                    width="370"
-                    height="294"
-                    alt=" Пример-созданного-сайта"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/technokryak.webp    1x,
+                        ./images/desktop/technokryak_2x.webp 2x,
+                        ./images/desktop/technokryak.jpg     1x,
+                        ./images/desktop/technokryak@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/techokryak.webp    1x,
+                        ./images/tablet/techokryak@2x.webp 2x,
+                        ./images/tablet/techokryak.jpg     1x,
+                        ./images/tablet/techokryak@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                                  ./images/mobile/tchnokryaj.webp 1x, 
+                                  ./images/mobile/tchnokryaj_2x.webp 2x
+                                  ./images/mobile/tchnokryaj.jpg 1x, 
+                                  ./images/mobile/tchnokryaj@2x.jpg 2x
+                                  "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="  ./images/desktop/technokryak.jpg"
+                      alt="couple of pictures"
+                    />
+                  </picture>
 
                   <div class="product-overlay">
                     <p class="example-description">
@@ -115,12 +180,45 @@
             <li class="examples__card">
               <a class="example link" href=""
                 ><div class="portfolio__image-thumb">
-                  <img
-                    src="./images/portf2.jpg"
-                    width="370"
-                    height="294"
-                    alt="два-баскетболиста-в-процессе-игры"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/goldenstar.webp    1x,
+                        ./images/desktop/goldenstar_2x.webp 2x,
+                        ./images/desktop/goldenstar.jpg     1x,
+                        ./images/desktop/goldenstar@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/golden-star.webp    1x,
+                        ./images/tablet/golden-star@2x.webp 2x,
+                        ./images/tablet/golden-star.jpg     1x,
+                        ./images/tablet/golden-star@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                                  ./images/mobile/golden-star.webp 1x, 
+                                  ./images/mobile/golden-star_2x.webp 2x
+                                  ./images/mobile/golden-star.jpg 1x, 
+                                  ./images/mobile/golden-star@2x.jpg 2x
+                                  "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src=" ./images/desktop/goldenstar.jpg"
+                      alt="Baseball"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="example-description">
                       Технокряк это современная площадка распространения
@@ -142,12 +240,45 @@
             <li class="examples__card">
               <a class="example link" href=""
                 ><div class="portfolio__image-thumb">
-                  <img
-                    src="./images/portf3.jpg"
-                    width="370"
-                    height="294"
-                    alt="эмблема-рыбного-ресторана"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/seafood.webp    1x,
+                        ./images/desktop/seafood_2x.webp 2x,
+                        ./images/desktop/seafood.jpg     1x,
+                        ./images/desktop/seafood@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/seafood.webp    1x,
+                        ./images/tablet/seafood@2x.webp 2x,
+                        ./images/tablet/seafood.jpg     1x,
+                        ./images/tablet/seafood@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                                  ./images/mobile/seafood.webp 1x, 
+                                  ./images/mobile/seafood_2x.webp 2x
+                                  ./images/mobile/seafood.jpg 1x, 
+                                  ./images/mobile/seafood@2x.jpg 2x
+                                  "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/desktop/seafood.jpg"
+                      alt="Logo seafood"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="example-description">
                       Технокряк это современная площадка распространения
@@ -167,12 +298,45 @@
             <li class="examples__card">
               <a class="example link" href=""
                 ><div class="portfolio__image-thumb">
-                  <img
-                    src="./images/portf4.jpg"
-                    width="370"
-                    height="294"
-                    alt="нерные-профессиональные-наушники"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/headphones.webp    1x,
+                        ./images/desktop/headphones_2x.webp 2x,
+                        ./images/desktop/headphones.jpg     1x,
+                        ./images/desktop/headphones@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/prime.webp    1x,
+                        ./images/tablet/prime@2x.webp 2x,
+                        ./images/tablet/prime.jpg     1x,
+                        ./images/tablet/prime@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                                  ./images/mobile/prime.webp 1x, 
+                                  ./images/mobile/prime_2x.webp 2x
+                                  ./images/mobile/prime.jpg 1x, 
+                                  ./images/mobile/prime@2x.jpg 2x
+                                  "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/desktop/headphones.jpg"
+                      alt="Headphones"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="example-description">
                       Технокряк это современная площадка распространения
@@ -192,12 +356,42 @@
             <li class="examples__card">
               <a class="example link" href=""
                 ><div class="portfolio__image-thumb">
-                  <img
-                    src="./images/portf5.jpg"
-                    width="370"
-                    height="294"
-                    alt="коробки-для-гаджетов"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/boxes.webp    1x,
+                        ./images/desktop/boxes_2x.webp 2x,
+                        ./images/desktop/boxes.jpg     1x,
+                        ./images/desktop/boxes@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/boxes.webp    1x,
+                        ./images/tablet/boxes@2x.webp 2x,
+                        ./images/tablet/boxes.jpg     1x,
+                        ./images/tablet/boxes@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                                  ./images/mobile/boxes.webp 1x, 
+                                  ./images/mobile/boxes_2x.webp 2x
+                                  ./images/mobile/boxes.jpg 1x, 
+                                  ./images/mobile/boxes@2x.jpg 2x
+                                  "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/desktop/boxes.jpg" alt="boxes" />
+                  </picture>
                   <div class="product-overlay">
                     <p class="example-description">
                       Технокряк это современная площадка распространения
@@ -217,12 +411,45 @@
             <li class="examples__card">
               <a class="example link" href=""
                 ><div class="portfolio__image-thumb">
-                  <img
-                    src="./images/portf6.jpg"
-                    width="370"
-                    height="294"
-                    alt="вид-сайта-с-экрана"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/desktop.webp    1x,
+                        ./images/desktop/desktop_2x.webp 2x,
+                        ./images/desktop/desktop.jpg     1x,
+                        ./images/desktop/desktop@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/inspiration.webp    1x,
+                        ./images/tablet/inspiration@2x.webp 2x,
+                        ./images/tablet/inspiration.jpg     1x,
+                        ./images/tablet/inspiration@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                                  ./images/mobile/inspirations.webp 1x, 
+                                  ./images/mobile/inspirations_2x.webp 2x
+                                  ./images/mobile/inspirations.jpg 1x, 
+                                  ./images/mobile/inspirations@2x.jpg 2x
+                                  "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/desktop/desktop.jpg"
+                      alt="Monitor Display"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="example-description">
                       Технокряк это современная площадка распространения
@@ -242,12 +469,45 @@
             <li class="examples__card">
               <a class="example link" href=""
                 ><div class="portfolio__image-thumb">
-                  <img
-                    src="./images/portf7.jpg"
-                    width="370"
-                    height="294"
-                    alt="разворот-женского-журнала"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/limited-edition.webp    1x,
+                        ./images/desktop/limited-edition_2x.webp 2x,
+                        ./images/desktop/limited-edition.jpg     1x,
+                        ./images/desktop/limited-edition@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/limited.webp    1x,
+                        ./images/tablet/limited@2x.webp 2x,
+                        ./images/tablet/limited.jpg     1x,
+                        ./images/tablet/limited@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                                  ./images/mobile/limited.webp 1x, 
+                                  ./images/mobile/limited_2x.webp 2x
+                                  ./images/mobile/limited.jpg 1x, 
+                                  ./images/mobile/limited@2x.jpg 2x
+                                  "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/desktop/limited-edition.jpg"
+                      alt="magazine"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="example-description">
                       Технокряк это современная площадка распространения
@@ -267,12 +527,42 @@
             <li class="examples__card">
               <a class="example link" href=""
                 ><div class="portfolio__image-thumb">
-                  <img
-                    src="./images/portf8.jpg"
-                    width="370"
-                    height="294"
-                    alt="лейбл-компании"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/lab.webp    1x,
+                        ./images/desktop/lab_2x.webp 2x,
+                        ./images/desktop/lab.jpg     1x,
+                        ./images/desktop/lab@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/lab.webp    1x,
+                        ./images/tablet/lab@2x.webp 2x,
+                        ./images/tablet/lab.jpg     1x,
+                        ./images/tablet/lab@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                                ./images/mobile/lab.webp 1x, 
+                                ./images/mobile/lab_2x.webp 2x
+                                ./images/mobile/lab.jpg 1x, 
+                                ./images/mobile/lab@2x.jpg 2x
+                                "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/desktop/lab.jpg" alt="lab tag" />
+                  </picture>
                   <div class="product-overlay">
                     <p class="example-description">
                       Технокряк это современная площадка распространения
@@ -292,12 +582,45 @@
             <li class="examples__card">
               <a class="example link" href=""
                 ><div class="portfolio__image-thumb">
-                  <img
-                    src="./images/portf9.jpg"
-                    width="370"
-                    height="294"
-                    alt="фото-приложения-на-ноутбуке"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/growing-business.webp    1x,
+                        ./images/desktop/growing-business_2x.webp 2x,
+                        ./images/desktop/growing-business.jpg     1x,
+                        ./images/desktop/growing-business@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/business.webp    1x,
+                        ./images/tablet/business@2x.webp 2x,
+                        ./images/tablet/business.jpg     1x,
+                        ./images/tablet/business@2x.jpg  2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                                  ./images/mobile/growing.webp 1x, 
+                                  ./images/mobile/growing_2x.webp 2x
+                                  ./images/mobile/growing.jpg 1x, 
+                                  ./images/mobile/growing@2x.jpg 2x
+                                  "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/desktop/growing-business.jpg "
+                      alt="Nikolay"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="example-description">
                       Технокряк это современная площадка распространения

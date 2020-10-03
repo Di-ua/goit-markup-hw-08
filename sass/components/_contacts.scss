@@ -23,6 +23,11 @@
   color: red;
 }
 
+@media screen and (min-width: 767px) {
+  .contacts-item:not(:last-child) {
+    margin-left: 20px;
+  }
+}
 @media screen and (min-width: 1199px) {
   .contacts-item:not(:last-child) {
     margin-right: 50px;
@@ -38,11 +43,24 @@
 
 @media screen and (min-width: 768px) {
   .contacts.list {
-    justify-content: space-between;
-
     margin-left: 84px;
     padding-top: 21px;
     padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .contacts {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact.list {
+    flex-wrap: nowrap;
+    margin-left: 305px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

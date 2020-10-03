@@ -1,10 +1,20 @@
 .section.staff {
-  display: flex;
-  flex-wrap: wrap;
-
   background-color: $secondary-background-color;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 768px) {
+  .staff.list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .staff.list {
+    flex-wrap: nowrap;
+  }
 }
 
 .staff-title {
@@ -23,12 +33,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: 1199px) {
     width: calc((100% - 30px * 3) / 4);
+  }
 
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
