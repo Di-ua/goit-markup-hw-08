@@ -118,4 +118,8 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
