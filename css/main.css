@@ -382,12 +382,6 @@ a {
   margin-bottom: 9px;
 }
 
-@media (min-width: 1200px) {
-  .contacts-block {
-    width: 120px;
-  }
-}
-
 .connect a {
   display: block;
   color: rgba(255, 255, 255, 0.6);
@@ -1304,10 +1298,7 @@ a {
 
 @media (min-width: 1200px) {
   .contacts-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    text-align: start;
   }
 }
 

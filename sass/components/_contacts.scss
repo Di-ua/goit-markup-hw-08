@@ -76,12 +76,6 @@
   margin-bottom: 9px;
 }
 
-@include for-size(desktop) {
-  .contacts-block {
-    width: 120px;
-  }
-}
-
 .connect a {
   display: block;
   color: rgba(255, 255, 255, 0.6);
