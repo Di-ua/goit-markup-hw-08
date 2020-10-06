@@ -10,11 +10,25 @@
   }
 }
 
+.wrapper-tablet {
+  @include for-size(tablet) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
 .footer-link {
   background-color: rgba(255, 255, 255, 0.1);
 
   & > .icon {
     fill: $hero-text-color;
+  }
+}
+
+@include for-size(tablet) {
+  .mailing.block {
+    margin-top: 60px;
   }
 }
 
@@ -24,27 +38,19 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .container.flexbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container.flexbox {
-    display: flex;
-
-    justify-content: space-around;
-  }
+.container.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 @include for-size(desktop) {
   .container.flexbox {
     display: flex;
     align-items: baseline;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -92,18 +98,33 @@
     flex-direction: initial;
   }
 }
+.contacts-block {
+  @include for-size(desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 .mail-input {
-  display: inline-block;
-  width: 358px;
+  width: 92vw;
   height: 50px;
   padding-left: 16px;
+  margin-bottom: 20px;
   color: $hero-text-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--footer-bg-color);
+
+  @include for-size(tablet) {
+    width: 450px;
+  }
+  @include for-size(desktop) {
+    width: 358px;
+  }
 }
 
 .icon-telegram {
