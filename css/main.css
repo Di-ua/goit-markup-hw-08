@@ -337,13 +337,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1199px) {
-  .contacts.link {
-    display: flex;
-    align-items: center;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .contacts.list {
     margin-left: 84px;
@@ -424,7 +417,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+  max-width: 450px;
   height: 609px;
   padding: 40px;
   line-height: 1.14;
@@ -473,7 +466,6 @@ a {
   display: block;
   position: relative;
   margin-bottom: 28px;
-  width: 80%;
 }
 
 .form__label {
@@ -535,7 +527,6 @@ a {
   display: block;
   margin-left: 5px;
   text-decoration: underline;
-  text-align: right;
   color: #2196f3;
 }
 
@@ -576,6 +567,16 @@ a {
   background-position: center;
   border-color: #2196f3;
   background-repeat: no-repeat;
+}
+
+.checkbox-text {
+  font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+  }
 }
 
 .section-titles {

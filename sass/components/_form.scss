@@ -7,7 +7,6 @@
     display: block;
     position: relative;
     margin-bottom: 28px;
-    width: 80%;
   }
 }
 
@@ -71,7 +70,6 @@
   display: block;
   margin-left: 5px;
   text-decoration: underline;
-  text-align: right;
   color: $accent-text-color;
 }
 
@@ -112,4 +110,11 @@
   background-position: center;
   border-color: $accent-text-color;
   background-repeat: no-repeat;
+}
+
+.checkbox-text {
+  font-size: 12px;
+  @include for-size(desktop) {
+    font-size: 14px;
+  }
 }
