@@ -161,12 +161,6 @@ a {
   justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .page-header__contacts {
-    margin-left: auto;
-  }
-}
-
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -353,8 +347,6 @@ a {
 @media screen and (min-width: 768px) {
   .contacts.list {
     margin-left: 84px;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 
@@ -1103,12 +1095,6 @@ a {
 @media screen and (max-width: 767px) {
   .navigation {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 1199px) {
-  .navigation {
-    margin-right: auto;
   }
 }
 
