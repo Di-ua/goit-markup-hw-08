@@ -112,9 +112,9 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     max-width: 696px;
-  }
 
-  @include for-size(desktop) {
-    font-size: 44px;
+    @include for-size(desktop) {
+      font-size: 44px;
+    }
   }
 }
