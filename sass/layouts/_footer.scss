@@ -18,8 +18,10 @@
   }
 }
 
-.mailing.block {
-  margin-left: 94px;
+@include for-size(desktop) {
+  .mailing.block {
+    margin-left: 94px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -47,8 +49,9 @@
 }
 
 .footer-icons-block {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) {
     margin-bottom: 60px;
+    margin-top: 60px;
   }
 
   @include for-size(tablet) {
