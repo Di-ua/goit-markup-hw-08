@@ -419,10 +419,9 @@ a {
   transform: translate(-50%, -50%) scale(1);
   max-width: 450px;
   height: 609px;
-  padding: 40px;
+  padding: 15px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  padding: 40px;
   text-align: center;
   color: #757575;
   background-color: #ffffff;
