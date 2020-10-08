@@ -30,6 +30,11 @@
   fill: currentColor;
 }
 
+.menu__button .menu__button--icon:hover,
+.menu__button .menu__button--icon:focus {
+  fill: $accent-text-color;
+}
+
 .page-header__menu {
   background-color: $primary-background-color;
 
@@ -47,6 +52,10 @@
     top: 100%;
     left: 0;
     width: 100%;
+
+    & .is-open {
+      display: block;
+    }
   }
 
   @include for-size(tablet) {
