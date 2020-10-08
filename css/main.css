@@ -48,8 +48,6 @@ a {
     justify-content: space-between;
     width: 100%;
     margin-right: 96px;
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
 }
 
@@ -768,7 +766,7 @@ a {
   margin-bottom: 0;
   display: inline-block;
   width: 100%;
-  text-align: justify;
+  text-align: start;
 }
 
 .section.staff {
@@ -1044,6 +1042,7 @@ a {
 @media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
+    margin-right: 40px;
   }
 }
 
@@ -1285,6 +1284,7 @@ a {
 @media (min-width: 1200px) {
   .follow {
     font-weight: 700;
+    text-align: start;
   }
 }
 
@@ -1361,6 +1361,7 @@ a {
 
 .work-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
