@@ -805,11 +805,20 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
+.staff-item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .staff-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 1199px) and (min-width: 768px) {
   .staff-item {
     width: calc((100% - 2 * 30px) / 2);
     margin-right: 30px;
-    margin-bottom: 30px;
   }
 }
 
