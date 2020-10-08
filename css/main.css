@@ -680,6 +680,7 @@ a {
     display: flex;
     margin: -15px;
     flex-wrap: wrap;
+    align-items: start;
   }
 }
 
@@ -1357,8 +1358,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    align-items: baseline;
   }
 }
 
@@ -1436,7 +1436,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .examples__card:nth-child(2n) {
     margin-right: 0;
   }
