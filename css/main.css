@@ -1348,11 +1348,11 @@ a {
 .work-item {
   display: flex;
   text-decoration: none;
+  margin-bottom: 15px;
 }
 
 .work-item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
