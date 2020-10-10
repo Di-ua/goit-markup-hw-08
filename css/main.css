@@ -37,8 +37,6 @@ a {
 
 .link .logotype {
   color: #212121;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -157,7 +155,6 @@ a {
     font-size: 14px;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 }
 
@@ -340,12 +337,6 @@ a {
 @media screen and (min-width: 1199px) {
   .contacts-item:not(:last-child) {
     margin-right: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contacts.list {
-    margin-left: 84px;
   }
 }
 
@@ -1042,7 +1033,7 @@ a {
 @media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
-    margin-right: 40px;
+    margin-right: 84px;
   }
 }
 
@@ -1370,6 +1361,7 @@ a {
     flex-wrap: wrap;
     list-style: none;
     align-items: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -1403,7 +1395,7 @@ a {
   color: #ffffff;
   margin: 0;
   top: 75%;
-  left: 54%;
+  left: 52%;
   transform: translate(-50%, -50%);
 }
 
