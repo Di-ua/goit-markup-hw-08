@@ -60,6 +60,7 @@
 
   @include for-size(tablet) {
     display: flex;
+    justify-content: space-between;
     padding: 0;
     flex-grow: 1;
     height: 80px;
@@ -90,11 +91,8 @@
 }
 
 .page-header__contacts {
-  display: flex;
-  align-items: center;
-
-  // @media (min-width: 768px) {
   @include for-size(tablet) {
-    // margin-left: auto;
+    display: flex;
+    align-items: center;
   }
 }
