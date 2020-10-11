@@ -55,7 +55,7 @@
 }
 
 .footer-icons-block {
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
     margin-top: 60px;
   }
