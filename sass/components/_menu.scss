@@ -92,7 +92,6 @@
 .page-header__contacts {
   display: flex;
   align-items: center;
-  justify-content: center;
 
   // @media (min-width: 768px) {
   @include for-size(tablet) {

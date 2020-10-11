@@ -44,7 +44,6 @@ a {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 100%;
     margin-right: 96px;
   }
 }
@@ -161,7 +160,6 @@ a {
 .page-header__contacts {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .button {
